@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.bean.Student;
-import com.example.exception.DuplicateStudentException;
+import com.example.exception.DuplicateStudentIdException;
 
 // Model Layer 
 public class StudentDAO {
