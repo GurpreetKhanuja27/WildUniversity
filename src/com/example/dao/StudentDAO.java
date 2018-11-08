@@ -134,6 +134,8 @@ public class StudentDAO {
 		
 		
 		// delete where uno= unino
+		System.out.printl("Delete Operation);
+		System.out.println("Deleting the student with " + unino);
 		
 	}
 }
