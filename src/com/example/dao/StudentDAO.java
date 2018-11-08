@@ -20,7 +20,7 @@ public class StudentDAO {
 	/*
 	 * Adding/Inserting a new Student 
 	 */
-	public void addStudent(Student stud) throws DuplicateStudentException  {
+	public void addStudent(Student stud) throws DuplicateStudentIdException  {
 		
 		 
 		//STEP 1 - Get connection  
@@ -32,7 +32,7 @@ public class StudentDAO {
 		
 		if(flag) {
 			// do not add the student to db
-			throw new DuplicateStudentException("Student university number is duplicate !! It should be always unique");
+			throw new DuplicateStudentIdException("Student university number is duplicate !! It should be always unique");
 			
 		}else {
 			// insert records in Student table
